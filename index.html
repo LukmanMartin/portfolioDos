@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo" >
+                <a href="#">Lukman</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner ">
+            <div id="particles-js"></div>
+            <div class="contenedor-img">
+                <img src="img/hero.jpeg" alt="">
+            </div>
+            <h1>Lukman Otunba</h1>
+            <h2>desarrolador web full stack </h2>
+            <div class="redes">
+
+                <a href="mailto:lukman.o992@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/lukman-otunba-mart%C3%ADn-910165246/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="tel:+622541255"><i class="fas fa-mobile-alt"></i></a>
+                <a href="https://wa.me/622541255" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div  class="contenido-seccion " data-aos="fade-up" >
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Lukman Otunba.</span> Hace un año decidí cambiar mi run¡mbo profesional de forma radical, pasando del mundo sanitario al tecnológico, después de 3 meses en un bootcamp, he pasado el resto del tiempo desarrolando mis habilidades por mi cuenta, y ahora busco una empresa que confié en mí</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Nacimiento</strong>
+                            02-07-1992
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            622 54 12 55
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            lukman.o992@gmail.com
+                        </li>
+    
+                        <li>
+                            <strong>Dirección</strong>
+                            Rivas-Vaciamadrid, Madrid
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Full Stack</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                    <!-- SECCION SKILLS    <div class="interes">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>MAC OS</span>
+                        </div>--> 
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                <a href="https://drive.google.com/file/d/1uIDwcopOBU4cAWeOEVIh_x-FGNFA5Cyb/view?usp=drive_link" class="button-link">
+                  Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+            0
+                
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Wordpress</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Node y express</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Resiliencia</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq" data-aos="zoom-out-right">
+                        <h4>Aprendizaje autodidacta</h4>
+                        <span class="casa">Autodidacta</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>Tras completar un bootcamp y un curso especializado, me lancé al desarrollo de proyectos propios, consolidando mis conocimientos y explorando nuevas áreas como PHP.
+                             Esta experiencia me ha permitido perfeccionar mis habilidades prácticas, ahora tengo un enfoque en la resolución de problemas y la mejora continua.                       </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq" data-aos="zoom-out-right" data-aos-duration="3500">
+                        <h4>Wordpress y photoshop</h4>
+                        <span class="casa">Pixelpro</span>
+                        <span class="fecha">2022 - 2022</span>
+                        <p>Después del bootcamp, descubrí mi pasión por el desarrollo y decidí comprometerme profesionalmente con este campo. Reconocí la amplitud de conocimientos pendientes, lo que me motivó a realizar otro curso para profundizar y expandir mis habilidades. Este paso ha sido crucial en mi viaje, 
+                            abriendo nuevas perspectivas y reafirmando mi compromiso con el aprendizaje continuo en esta apasionante área.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq" data-aos="zoom-out-right">
+                        <h4>Reacj, JS. node y Express</h4>
+                        <span class="casa">Neoland</span>
+                        <span class="fecha">2022</span>
+                        <p>
+                            Cambie mi carrera con un bootcamp tecnológico. A pesar de aprender mucho, decidí continuar mi aprendizaje de forma autodidacta antes de entrar al mundo empresarial. Esta etapa me reveló las amplias posibilidades de la computación,
+                             despertando una nueva pasión por la tecnología y programación y motivándome a ir más allá de mis límites previos.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+    <!-- SECCION CURRICULUM EXP-->
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der" data-aos="zoom-out-left">
+                        <h4>Full stack Developer</h4>
+                        <span class="casa">Liados Creative</span>
+                        <span class="fecha">2023</span>
+                        <p>Este proyecto consiste en una web completa desarrollada para una empresa noruega, abarcando tanto el front-end como el back-end. La página incluye características avanzadas como un filtro combinativo, múltiples sliders y formularios interactivos. Además, se integra con un sistema de gestión de contenidos (CMS), accesible mediante login. En esta sección, los administradores pueden visualizar, editar y eliminar información relacionada con trabajadores y proyectos, los cuales se reflejan y
+                            actualizan en tiempo real en el sitio web principal</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der" data-aos="zoom-out-left">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Dentsu Creative</span>
+                        <span class="fecha">2023</span>
+                        <p>A lo largo de este año, he tenido la oportunidad de trabajar en varios proyectos de manera esporádica para una empresa, enfocándome en la creación de newsletters, banners y landing pages, todos diseñados específicamente para la empresa Orange. Cada proyecto ha sido una oportunidad para afinar mis habilidades en diseño y marketing digital, 
+                            asegurando que cada elemento se alinee con la identidad de marca y los objetivos de comunicación de Orange.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der" data-aos="zoom-out-left">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Myself</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>A lo largo de este período, he emprendido proyectos de forma independiente, centrados en mi desarrollo personal y profesional. Entre estos, destaca un juego de combate inspirado en Pokémon, desarrollado utilizando la Poke API. Además, he creado otros juegos interactivos, incluyendo uno de preguntas,
+                             que han sido fundamentales para perfeccionar mis habilidades en programación y diseño de juegos</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <a href="https://web-noruega.vercel.app/" target="_blank"></a>
+                    <img src="img/p1.png" width="320" height="200" alt="">
+                    <div class="overlay">
+                    
+                        <h3>web consultora noruega</h3>
+                        <p>en progreso</p>
+                        <a href="https://web-noruega.vercel.app/" target="_blank">ver</a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.png" width="320" height="200" alt="">
+                    <div class="overlay">
+                        <h3>juego de memoria</h3>
+                        <p>autopráctica</p>
+                        <a href="https://juego-de-memoria-ecru.vercel.app/" target="_blank">ver</a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <video width="320" height="200" controls>
+                        <source src="img/newslatervideo.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                    <div class="overlay1">
+                        <h3>Newslatter</h3>
+                        <p>dentsu creative</p>
+                    </div>
+                </div>
+                
+                
+                <div class="proyecto" >
+                    <video width="320" height="200" controls>
+                        <source src="img/pokemonvideo.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                    <div class="overlay1">
+                        <h3>Juego PokeAPI</h3>
+                        <a href="https://github.com/LukmanMartin/combate-pokemon" target="_blank">código</a>
+                    </div>
+                </div>
+
+                <div class="proyecto" >
+                    <img src="img/p3.png" width="320" height="200" alt="">
+                    <div class="overlay">
+                        <h3>Ejemplo de test</p>
+                            <a href="https://ejemplo-de-test.vercel.app/" target="_blank">ver</a>
+
+                    </div>
+                </div>
+                <div class="proyecto">
+                  
+                    <img src="img/p4.png" width="320" height="200" alt="">
+                    <div class="overlay">
+                    
+                        <h3>landing de ejemplo</h3>
+                        <p>en progreso</p>
+                         <a href="https://landing-ejemplo-lime.vercel.app/" target="_blank">ver</a>
+                    </div>
+                </div>
+
+            </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Este formulario es decorativo y no funcional"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                               Rivas-Vaciamadrid, Madrid
+                            </li>
+                            <li>
+                                <a href="tel:+622541255"><i class="fas fa-mobile-alt"></i></a>
+                                Llamamé: 622 54 12 55 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: lukman.o992@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="mailto:lukman.o992@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/lukman-otunba-mart%C3%ADn-910165246/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="tel:+622541255"><i class="fas fa-mobile-alt"></i></a>
+            <a href="https://wa.me/622541255" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    <script src="script.js"></script>
+    
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    <script src="script.js"></script>
+
+      
+</body>
+</html>
+      
+</body>
+</html>
