@@ -316,7 +316,7 @@ html{
 }
 @keyframes photoshop {
     0%{width: 0%;}
-    100%{width: 85%;}
+    100%{width: 75%;}
 }
 
 .skills .skill .wordpress{
@@ -325,7 +325,7 @@ html{
 }
 @keyframes wordpress {
     0%{width: 0%;}
-    100%{width: 85%;}
+    100%{width: 80%;}
 }
 
 .skills .skill .drupal{
@@ -335,6 +335,23 @@ html{
 @keyframes drupal {
     0%{width: 0%;}
     100%{width: 75%;}
+}
+.skills .skill .php{
+    width: 0%;
+    animation: 2s php forwards;
+}
+@keyframes php {
+    0%{width: 0%;}
+    100%{width: 55%;}
+}
+
+.skills .skill .react{
+    width: 0%;
+    animation: 2s react forwards;
+}
+@keyframes react {
+    0%{width: 0%;}
+    100%{width: 80%;}
 }
 
 .skills .skill .comunicacion{
@@ -373,13 +390,21 @@ html{
     100%{width: 95%;}
 }
 
-.skills .skill .proyect{
+.skills .skill .resiliencia{
     width: 0%;
-    animation: 2s proyect forwards;
+    animation: 2s resiliencia forwards;
 }
-@keyframes proyect {
+@keyframes resiliencia {
     0%{width: 0%;}
     100%{width: 80%;}
+}
+.skills .skill .compromiso{
+    width: 0%;
+    animation: 2s compromiso forwards;
+}
+@keyframes compromiso {
+    0%{width: 0%;}
+    100%{width: 95%;}
 }
 /* SECCION CURRICULUM */
 .curriculum{
@@ -775,6 +800,20 @@ footer .arriba{
     }
     .contacto .fila .col{
         width: 100%;
+    }
+    .contenedor-intereses{
+       
+        justify-content: center;
+    }
+    .info{
+        border: 1px solid green;
+        margin-top: 50px;
+        width: 100%;
+    }
+    footer {
+   margin-top: 50px;
+        padding: 20px 0 30px 0;
+    
     }
 }
 
